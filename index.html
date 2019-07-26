@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/37880ab8f1.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<script>
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+<header>
+  <!-- Navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-sm"></i></a>
+    <a href="#">Home</a>
+    <a href="#">First Steps</a>
+    <a href="#">Curated Tutorials</a>
+    <a href="#">Basic Tutorials</a>
+    <a href="#">Game Engines and Languages</a>
+  </div>
+  <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+</header>
 <body>
 
 </body>
