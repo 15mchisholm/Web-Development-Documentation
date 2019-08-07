@@ -11,20 +11,23 @@
   color: var(--dark);
   border: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-  margin-top: 65px;
-  box-sizing: border-box;
+  padding-top: 65px;
 }
 /* Top header for website */
 header {
   z-index: 1;
+  max-width: 100%;
   overflow: hidden;
   position: fixed;
   background-color: white;
   top: 0;
   left: 0;
+  right: 0;
   height: 65px;
   width: 100%;
   box-shadow: 0 5px 5px -5px rgba(104, 104, 104, 0.8);
@@ -71,7 +74,7 @@ header {
 
 .fa-2x {
   top: 0;
-  margin-left: 20px;
+  padding-left: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -83,18 +86,18 @@ header {
 }
 
 
-/* SLIDESHOW CSS */
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.mySlides {display: none;}
+.mySlides img {
+  align-self: center;
+  height: 50%;
+  size: cover;
 }
 
-/* Hide the images by default */
-.mySlides{
-  display: none;
-  width: 100%;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -103,8 +106,8 @@ header {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
