@@ -1,24 +1,16 @@
-/* CSS Variables */
-:root {
-  --primary: #ddd;
-  --dark: #333;
-  --light: #fff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
-}
-
 * {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
+  color: #333;
   border: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+/* Objects not included in header */
 html {
   padding-top: 65px;
 }
-/* Top header for website */
+/* Top header */
 header {
   z-index: 2;
   max-width: 100%;
@@ -33,7 +25,6 @@ header {
   box-shadow: 0 10px 5px -5px rgba(104, 104, 104, 0.8);
 }
 
-/* SIDEBAR CSS */
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -79,88 +70,26 @@ header {
   margin-bottom: 16px;
 }
 
+.fa-times {
+  color: #818181;
+  transition: 0.3s;
+}
+
+.fa-times:hover {
+  color: #f1f1f1;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px){
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
-.slider {
-  max-width: 100%;
-  height: 75vh;
-  position: relative;
-}
-.slide1,.slide2,.slide3,.slide4,.slide5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.slide1 {
-  background: url(img/Black_Game_Controller.jpg)no-repeat center;
-      background-size: cover;
-    animation:fade 16s infinite;
--webkit-animation:fade 16s infinite;
-
-}
-.slide2 {
-  background: url(img/pic1.jpg)no-repeat center;
-      background-size: cover;
-    animation:fade2 16s infinite;
--webkit-animation:fade2 16s infinite;
-}
-.slide3 {
-    background: url(img/showcase_img.jpg)no-repeat center;
-      background-size: cover;
-    animation:fade3 16s infinite;
--webkit-animation:fade3 16s infinite;
-}
-.slide4 {
-    background: url(img/UE4.JPG)no-repeat center;
-      background-size: cover;
-    animation:fade4 16s infinite;
--webkit-animation:fade4 16s infinite;
-}
-@keyframes fade {
-  0% {opacity:1}
-  25% {opacity: 0}
-  50% {opacity: 0}
-  75% {opacity: 0}
-  100% {opacity:1}
-}
-@keyframes fade2 {
-  0% {opacity:0}
-  25% {opacity: 1}
-  50% {opacity: 0}
-  75% {opacity: 0}
-  100% {opacity:0}
-}
-@keyframes fade3 {
-  0% {opacity:0}
-  25% {opacity: 0}
-  50% {opacity: 1}
-  75% {opacity: 0}
-  100% {opacity:0}
-}
-@keyframes fade4 {
-  0% {opacity:0}
-  25% {opacity: 0}
-  50% {opacity: 0}
-  75% {opacity: 1}
-  100% {opacity:0}
-}
-.text a {
-  color: #f2f2f2;
-  font-size: 50px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-}
-
 p {
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: justify;
   text-align-last: center;
 }
