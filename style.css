@@ -85,24 +85,70 @@ header {
   .sidenav a {font-size: 18px;}
 }
 
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
+.slider {
   max-width: 100%;
   height: 75vh;
-  object-fit: cover;
+  position: relative;
 }
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(img/Black_Game_Controller.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 16s infinite;
+-webkit-animation:fade 16s infinite;
 
-/* Caption text */
-.text {
+}
+.slide2 {
+  background: url(img/pic1.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 16s infinite;
+-webkit-animation:fade2 16s infinite;
+}
+.slide3 {
+    background: url(img/showcase_img.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 16s infinite;
+-webkit-animation:fade3 16s infinite;
+}
+.slide4 {
+    background: url(img/UE4.JPG)no-repeat center;
+      background-size: cover;
+    animation:fade4 16s infinite;
+-webkit-animation:fade4 16s infinite;
+}
+@keyframes fade {
+  0% {opacity:1}
+  25% {opacity: 0}
+  50% {opacity: 0}
+  75% {opacity: 0}
+  100% {opacity:1}
+}
+@keyframes fade2 {
+  0% {opacity:0}
+  25% {opacity: 1}
+  50% {opacity: 0}
+  75% {opacity: 0}
+  100% {opacity:0}
+}
+@keyframes fade3 {
+  0% {opacity:0}
+  25% {opacity: 0}
+  50% {opacity: 1}
+  75% {opacity: 0}
+  100% {opacity:0}
+}
+@keyframes fade4 {
+  0% {opacity:0}
+  25% {opacity: 0}
+  50% {opacity: 0}
+  75% {opacity: 1}
+  100% {opacity:0}
+}
+.text a {
   color: #f2f2f2;
   font-size: 50px;
   padding: 8px 12px;
@@ -110,25 +156,8 @@ header {
   bottom: 50%;
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 
 p {
   margin: 40px;
