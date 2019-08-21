@@ -93,3 +93,10 @@ p {
   text-align: justify;
   text-align-last: center;
 }
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 5vw);
+  grid-gap: 15px;
+}
