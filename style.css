@@ -46,7 +46,7 @@ header {
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -72,7 +72,7 @@ header {
 
 .fa-times {
   color: #818181;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .fa-times:hover {
@@ -142,25 +142,25 @@ hr {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 
 .gallery_item4 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
 }
 
 .gallery_item5 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .gallery_item6 {
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
