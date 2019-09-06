@@ -8,8 +8,17 @@
 }
 /* Objects not included in header */
 html {
-  padding-top: 65px;
+  padding-top: 65px;s
 }
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
 /* Top header */
 header {
   z-index: 2;
@@ -152,7 +161,9 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px
 }
 
 .tutorial_img {
@@ -160,31 +171,31 @@ header {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-.tutorial_text {
+.tutorial_text,.tutorial_text>h1,.tutorial_text>p {
   text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .tutorial_text>h1{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .tutorial_text>p {
-  font-size: 20px;
+  font-size: 15px;
   padding-top: 10px;
 }
 
 .tutorial_UE4_Blueprint {
-  grid-column-start: 1;
-  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
 .UE4_Blueprints {
-  grid-column-start: 2;
-  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
