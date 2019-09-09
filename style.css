@@ -8,15 +8,28 @@
 }
 /* Objects not included in header */
 html {
-  padding-top: 65px;s
+  padding-top: 65px;
+}
+
+hr {
+    display: block;
+    height: 4px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 20px 25%;
+    padding: 0;
 }
 
 h1 {
   text-align: center;
+  margin-top: 20px;
 }
 
 p {
   text-align: center;
+  margin-top: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /* Top header */
@@ -181,13 +194,11 @@ header {
   grid-column-end: 4;
 }
 
-.tutorial_text>h1{
-  font-size: 40px;
-}
-
 .tutorial_text>p {
   font-size: 15px;
-  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .tutorial_UE4_Blueprint {

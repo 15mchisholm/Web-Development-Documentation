@@ -8,49 +8,46 @@ p {
   text-align-last: center;
 }
 
-hr {
-    display: block;
-    height: 4px;
-    border: 0;
-    border-top: 2px solid #ccc;
-    margin: 0 25%;
-    padding: 0;
-}
-
 .slider {
   max-width: 100%;
   height: 75vh;
   position: relative;
 }
+
 .slide1,.slide2,.slide3,.slide4,.slide5 {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
 .slide1 {
   background: url(img/Black_Game_Controller.jpg)no-repeat center;
   background-size: cover;
   animation:fade 16s infinite;
   -webkit-animation:fade 16s infinite;
 }
+
 .slide2 {
   background: url(img/pic1.jpg)no-repeat center;
   background-size: cover;
   animation:fade2 16s infinite;
   -webkit-animation:fade2 16s infinite;
 }
+
 .slide3 {
   background: url(img/showcase_img.jpg)no-repeat center;
   background-size: cover;
   animation:fade3 16s infinite;
   -webkit-animation:fade3 16s infinite;
 }
+
 .slide4 {
   background: url(img/UE4.JPG)no-repeat center;
   background-size: cover;
   animation:fade4 16s infinite;
   -webkit-animation:fade4 16s infinite;
 }
+
 @keyframes fade {
   0% {opacity:1}
   25% {opacity: 0}
@@ -58,6 +55,7 @@ hr {
   75% {opacity: 0}
   100% {opacity:1}
 }
+
 @keyframes fade2 {
   0% {opacity:0}
   25% {opacity: 1}
@@ -65,6 +63,7 @@ hr {
   75% {opacity: 0}
   100% {opacity:0}
 }
+
 @keyframes fade3 {
   0% {opacity:0}
   25% {opacity: 0}
@@ -72,6 +71,7 @@ hr {
   75% {opacity: 0}
   100% {opacity:0}
 }
+
 @keyframes fade4 {
   0% {opacity:0}
   25% {opacity: 0}
@@ -79,6 +79,7 @@ hr {
   75% {opacity: 1}
   100% {opacity:0}
 }
+
 .text a {
   color: #f2f2f2;
   font-size: 50px;
