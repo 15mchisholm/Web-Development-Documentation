@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
   <!-- ****** faviconit.com favicons ****** -->
 	<link rel="shortcut icon" href="favicon/Game_Controller_Icon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/Game_Controller_Icon.ico">
@@ -12,27 +13,25 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/Game_Controller_Icon-16.png">
 	<!-- ****** faviconit.com favicons ****** -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="home.css">
-  <script src="https://kit.fontawesome.com/37880ab8f1.js"></script>
-  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+	<script src="script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Game Development</title>
 </head>
-<header>
-  <!-- Navigation -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-sm"></i></a>
-    <a href="home.html">Home</a>
-    <a href="#">First Steps</a>
-    <a href="basic_tutorials.html">Basic Tutorials</a>
-    <a href="curated_tutorials.html">Curated Tutorials</a>
-    <a href="game_engines_and_languages.html">Game Engines and Languages</a>
-  </div>
-  <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
-</header>
 <body>
-
+	<header>
+	  <!-- Navigation -->
+	  <div id="mySidenav" class="sidenav">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu_close.png" class="menu_close"></i></a>
+	    <a href="home.html">Home</a>
+	    <a href="#">First Steps</a>
+	    <a href="basic_tutorials.html">Basic Tutorials</a>
+	    <a href="curated_tutorials.html">Curated Tutorials</a>
+	    <a href="game_engines_and_languages.html">Game Engines and Languages</a>
+	  </div>
+	  <span onclick="openNav()"><img src="img/menu_open.png" class="menu_open"></img></span>
+	</header>
 <div class='slider'>
   <div class='slide1'><div class="text"><a href="#">First Steps</a></div></div>
   <div class='slide2'><div class="text"><a href="basic_tutorials.html">Basic Tutorials</a></div></div>
@@ -65,5 +64,4 @@
   </figure>
   </div>
 </body>
-<script src="script.js"></script>
 </html>

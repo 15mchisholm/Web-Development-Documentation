@@ -85,19 +85,21 @@ header {
   margin-left: 50px;
 }
 
-.fa-2x {
+.menu_open {
   top: 0;
   padding-left: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.fa-times {
+.menu_close {
+  height: 16px;
+  width: 16px;
   color: #818181;
   transition: 0.5s;
 }
 
-.fa-times:hover {
+.menu_close:hover {
   color: #f1f1f1;
 }
 
