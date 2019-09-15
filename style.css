@@ -11,6 +11,11 @@ html {
   padding-top: 65px;
 }
 
+.menu_open {
+  height: 35px;
+  margin-bottom: 5px;
+}
+
 hr {
     display: block;
     height: 4px;
@@ -92,83 +97,25 @@ header {
   margin-bottom: 16px;
 }
 
+.menu_open:hover {
+  cursor: pointer;
+}
+
 .menu_close {
   height: 16px;
   width: 16px;
-  color: #818181;
   transition: 0.5s;
 }
 
 .menu_close:hover {
-  color: #f1f1f1;
+  background-image: url('img/menu_close_hover.png');
+  background-size: 16px 16px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px){
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-.gallery {
-  display: grid;
-  grid-template-rows: repeat(3, 0.5fr);
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 15px;
-  margin: 40px 40px;
-}
-
-.gallery_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.4s;
-    box-shadow: 0 0 10px rgba(104, 104, 104, 0.8);
-}
-
-.gallery_img:hover {
-  opacity: 0.7;
-}
-
-.gallery_item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.gallery_item2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.gallery_item3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery_item4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.gallery_item5 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.gallery_item6 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 
 /* Tutorial grid display for ease of addition */
