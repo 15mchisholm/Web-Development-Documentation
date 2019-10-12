@@ -13,6 +13,7 @@
 	<!-- ****** faviconit.com favicons ****** -->
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/37880ab8f1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,38 +21,42 @@
 </head>
 <header>
   <!-- Navigation -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-sm"></i></a>
-    <a href="home.html">Home</a>
-    <a href="#">First Steps</a>
-    <a href="basic_tutorials.html">Basic Tutorials</a>
-    <a href="curated_tutorials.html">Curated Tutorials</a>
-    <a href="game_engines_and_languages.html">Game Engines and Languages</a>
-  </div>
-  <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu_close.png" alt="Close Menu" class="menu_close"></a>
+		<a href="index.html">Home</a>
+		<a href="first_steps.html">First Steps</a>
+		<a href="basic_tutorials.html">Basic Tutorials</a>
+		<a href="curated_tutorials.html">Curated Tutorials</a>
+		<a href="game_engines_and_languages.html">Game Engines and Languages</a>
+	</div>
+  <span onclick="openNav()"><img src="img/menu_open.png" alt="Closed Menu" class="menu_open"></span>
 </header>
 <body>
+	<h1>Curated Tutorials</h1>
+	<p>A small collection of curated tutorials created by the Unreal Engine 4 community, most of these I personally consider helpful, and can range from simple functions, to advanced mechanics.</p>
 	<hr>
   <div class="tutorials">
-		<div class="UE4_Blueprint_img">
-			<a href="https://docs.unrealengine.com/en-US/Engine/Blueprints/GettingStarted/index.html" target="_blank"><img src="img/UE4_Logo.jpg" alt="Unreal Engine 4 Logo" class="tutorial_img"></a>
+		<div class="tutorial_img first_tutorial">
+			<a href="https://worldofleveldesign.com/categories/ue4/ue4-step-by-step-first-simple-level.php" target="_blank"><img src="img/UE4_level_basics.jpg" alt="Unreal Engine 4 Level blueprint" class="tutorial_img"></a>
 		</div>
-		<div class="tutorial_text UE4_Blueprints">
-			<h1>Unreal Engine 4 Blueprint Introduction</h1>
-			<p>Unreal Engine 4's official tutorial for their visual scripting system known as "Blueprint", it introduces you to the basic types of blueprints and provides examples of what they are able to do, while they are more limited than C++ they are generally easier for visually driven learners to pick up and use.</p>
+		<div class="tutorial_text first_tutorial">
+			<a href="https://worldofleveldesign.com/categories/ue4/ue4-step-by-step-first-simple-level.php" target="_blank"><h1>UE4 Step by Step level construction</h1></a>
+			<p>A tutorial on creating your first ever level in Unreal Engine 4, nothing complex or overly ornate, just a simple introduction. It teaches you the absolute basics of many integral parts of a level, such as lighting, proportions, and the terrain.</p>
 		</div>
-		<div class="tutorial_img2">
-			<img src="" alt="" class="tutorial_img">
+		<div class="tutorial_img second_tutorial">
+			<a href="https://www.youtube.com/watch?v=P6n73kxBVV8&list=PLL0cLF8gjBpquEcZTNZnTYckga9xu73Sf" target="_blank"><img src="img/virtus_learning_hub.jpg" alt="Virtus Learning Hub Logo" class="tutorial_img"></a>
 		</div>
-		<figure class="tutorial_img3">
-			<img src="" alt="" class="tutorial_img">
-		</figure>
-		<figure class="tutorial_img4">
-			<img src="" alt="" class="tutorial_img">
-		</figure>
-		<figure class="tutorial_img5">
-			<img src="" alt="" class="tutorial_img">
-		</figure>
+		<div class="tutorial_text second_tutorial">
+			<a href="https://www.youtube.com/watch?v=P6n73kxBVV8&list=PLL0cLF8gjBpquEcZTNZnTYckga9xu73Sf" target="_blank"><h1>Virtus Learning Hub</h1></a>
+			<p>Introducing Virtus Learning Hub, a Youtube channel dedicated to teaching a variety of topics, from text based code to visual scripting. All of their tutorials are in depth, regardless of the complexity, every aspect is explained and demonstrated, a great place for beginners and pros alike.
+		</div>
+		<div class="tutorial_img third_tutorial">
+			<a href="https://www.raywenderlich.com/771-unreal-engine-4-tutorial-for-beginners-getting-started" target="_blank"><img src="img/unreal_engine_banana.jpg" alt="Unreal Engine Banana" class="tutorial_img"></a>
+		</div>
+		<div class="tutorial_text third_tutorial">
+			<a href="https://www.raywenderlich.com/771-unreal-engine-4-tutorial-for-beginners-getting-started" target="_blank"><h1>Ray Wenderlich's getting started tutorial</h1></a>
+			<p>Ray Wenderlich has a collection of information available on his website, from the absolute basics, including the installation, through to the more advanced mechanics such as cel shading.</p>
+		</div>
   </div>
 </body>
 <script src="script.js"></script>

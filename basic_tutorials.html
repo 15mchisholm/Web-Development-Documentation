@@ -13,6 +13,7 @@
 	<!-- ****** faviconit.com favicons ****** -->
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/37880ab8f1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,29 +21,29 @@
 </head>
 <header>
   <!-- Navigation -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-sm"></i></a>
-    <a href="home.html">Home</a>
-    <a href="#">First Steps</a>
-    <a href="basic_tutorials.html">Basic Tutorials</a>
-    <a href="curated_tutorials.html">Curated Tutorials</a>
-    <a href="game_engines_and_languages.html">Game Engines and Languages</a>
-  </div>
-  <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/menu_close.png" alt="Close Menu" class="menu_close"></a>
+		<a href="index.html">Home</a>
+		<a href="first_steps.html">First Steps</a>
+		<a href="basic_tutorials.html">Basic Tutorials</a>
+		<a href="curated_tutorials.html">Curated Tutorials</a>
+		<a href="game_engines_and_languages.html">Game Engines and Languages</a>
+	</div>
+  <span onclick="openNav()"><img src="img/menu_open.png" alt="Closed Menu" class="menu_open"></span>
 </header>
 <body>
 	<h1>Basic Tutorials</h1>
-	<p>A small collection of simple tutorials for beginning your career in game development, ranging from scripting your game, to building levels in your game. Each link leads to the respective tutorial page, unfortunately as these basic tutorials are created by myself, they will be limited to Unreal Engine 4 as that is the engine I am most familiar with.</p>
+	<p>A small collection of simple tutorials for beginning your career in game development, ranging from scripting your game, to building levels in your game. Each link leads to the respective tutorial page, these tutorials will be limited to Unreal Engine 4.</p>
 	<hr>
   <div class="tutorials">
-		<div class="UE4_Blueprint_img">
-			<a href="https://docs.unrealengine.com/en-US/Engine/Blueprints/GettingStarted/index.html" target="_blank"><img src="img/UE4_Logo.jpg" alt="Unreal Engine 4 Logo" class="tutorial_img"></a>
+		<div class="tutorial_img first_tutorial">
+			<a href="https://docs.unrealengine.com/en-US/Engine/Blueprints/GettingStarted/index.html" target="_blank"><img src="img/UE4_basic_bp_tutorial.jpg" alt="Unreal Engine 4 Level blueprint" class="tutorial_img"></a>
 		</div>
-		<div class="tutorial_text UE4_Blueprints">
-			<h1>Unreal Engine 4 Blueprint Introduction</h1>
-			<p>Unreal Engine 4's official tutorial for their visual scripting system known as "Blueprint", it introduces you to the basic types of blueprints and provides examples of what they are able to do, while they are more limited than C++ they are generally easier for visually driven learners to pick up and use.</p>
+		<div class="tutorial_text first_tutorial">
+			<a href="https://docs.unrealengine.com/en-US/Engine/Blueprints/GettingStarted/index.html" target="_blank"><h1>Unreal Engine 4 Blueprint Introduction</h1></a>
+			<p>Unreal Engine 4's official tutorial for their visual scripting system known as "Blueprint", it introduces you to the basic types of blueprints and provides examples of what they are able to do, while they are more limited than C++ they are generally easier for visually driven learners to pick up and use. The website also contains more tutorials as well as tips and tricks to improve your level design.</p>
 		</div>
-		<div class="tutorial_img2">
+		<div class="tutorial_img second_tutorial">
 			<img src="" alt="" class="tutorial_img">
 		</div>
 		<figure class="tutorial_img3">
@@ -50,10 +51,6 @@
 		</figure>
 		<figure class="tutorial_img4">
 			<img src="" alt="" class="tutorial_img">
-		</figure>
-		<figure class="tutorial_img5">
-			<img src="" alt="" class="tutorial_img">
-		</figure>
   </div>
 </body>
 <script src="script.js"></script>
