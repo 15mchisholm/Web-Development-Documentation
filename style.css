@@ -11,11 +11,6 @@ html {
   padding-top: 65px;
 }
 
-.menu_open {
-  height: 35px;
-  margin-bottom: 5px;
-}
-
 hr {
     display: block;
     height: 4px;
@@ -25,6 +20,10 @@ hr {
     padding: 0;
 }
 
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -32,10 +31,12 @@ h1 {
 }
 
 p {
-  text-align: center;
-  margin-top: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: 20%;
   margin-right: 20%;
+  text-align: justify;
+  text-align-last: center;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -97,6 +98,7 @@ header {
   padding-left: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
+  height: 35px;
 }
 
 .menu_open:hover {
@@ -106,18 +108,25 @@ header {
 .menu_close {
   height: 16px;
   width: 16px;
+  margin-top: 10px;
   transition: 0.5s;
+  background-image: url('img/menu_close.png');
+  background-size: 16px 16px;
 }
 
 .menu_close:hover {
   background-image: url('img/menu_close_hover.png');
-  background-size: 16px 16px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px){
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px){
+  h1 {font-size: 24px;}
+  p {font-size: 12px;}
 }
 
 a {
@@ -152,7 +161,6 @@ a {
 }
 
 .tutorial_text>p {
-  font-size: 15px;
   margin-top: 10px;
   margin-left: 0;
   margin-right: 0;
